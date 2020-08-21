@@ -1,7 +1,8 @@
 body {
-    background: url('https://images2.alphacoders.com/103/1039991.jpg');
-    max-width: 1080px;
-    height: 420px;
+    background: rgb(6,9,141);
+    background: radial-gradient(circle, rgb(84, 86, 201) 0%, rgba(7,158,42,1) 20%, rgba(5,135,150,1) 73%, rgba(0,129,255,1) 100%);
+    max-width: 450px;
+    height: 100vh;
 }
 
 .container {
@@ -11,13 +12,16 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: 966px;
+    height: 380px;
 }
   
 .buttons {
-    background-color: rgb(15, 78, 94);
+    background-color: rgba(15, 78, 94, 0.336);
     padding: 30px;
     border-top: 5px solid rgba(0, 0, 0, 0.404);
     border-bottom: 5px solid rgba(0, 0, 0, 0.404);
+    border-left: 5px solid rgba(7, 54, 141, 0.473);
+    border-right: 5px solid rgba(7, 54, 141, 0.473);
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
 }
@@ -42,20 +46,33 @@ body {
     height: 20px;
 }
   
+#main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.438);
+    border-radius: 120px;
+}
 h1 {
-    font-size: 40px;
-    color: white;
+    padding: 10px;
+    font-family: 'Ubuntu Mono';
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(14, 12, 12);
 }
 
 input {
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 20px;
     width: 320px;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 20px;
     height: 40px;
-    border: 1px solid black;
-    background-color: rgba(127, 207, 127, 0.623);
+    border-bottom: 3px solid rgba(2, 22, 58, 0.658);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: rgba(127, 207, 127, 0.342);
     font-size: 26px;
 }
 
@@ -64,7 +81,33 @@ button {
     height: 60px;
     padding: 10px;
     width: 50px;
-    background-color: rgb(153, 153, 194);
+    background-color: rgb(188, 188, 194);
     font-size: 20px;
+    font-family: Arial;
+    color: rgb(14, 14, 15);
     cursor: pointer;
-  }
+    transition: 200ms;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Ubuntu Mono';
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}

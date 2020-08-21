@@ -1,3 +1,5 @@
-# Calculadora SImples em Javascript
+# Calculadora Simples feita em ElectronJS 
 
-Uma calculadora simples feita com HTML5, CSS3 e JavaScript Puro
+<img src="https://image.flaticon.com/icons/png/512/90/90819.png" width="120px" height="120px">
+
+> Essa calculadora foi feita em ElectronJS utilizando JavaScript, desenvolvida apenas para fins didáticos de aprimoramento de conhecimento.

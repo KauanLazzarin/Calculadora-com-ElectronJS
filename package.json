@@ -1,0 +1,24 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "Uma calculadora simples feita com HTML5, CSS3 e JavaScript Puro'",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KauanLazzarin/Calculadora-Javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KauanLazzarin/Calculadora-Javascript/issues"
+  },
+  "homepage": "https://github.com/KauanLazzarin/Calculadora-Javascript#readme",
+  "dependencies": {
+    "electron": "^9.2.1"
+  }
+}
