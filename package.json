@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/KauanLazzarin/Calculadora-Javascript#readme",
   "dependencies": {
-    "electron": "^9.2.1"
+    "electron": "^9.2.1",
+    "electron-reload": "^1.5.0"
   }
 }
