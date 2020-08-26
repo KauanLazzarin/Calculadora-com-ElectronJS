@@ -1,0 +1,46 @@
+@media(min-width: 700px) {
+
+    #menu {
+        margin-top: 10px;
+        width: 90vw;
+    }
+
+    #menu ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #menu ul li {
+        margin: 0;
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    #page-title img {
+
+    }
+
+    .container {
+        width: 370px;
+    }
+
+    .container img {
+        width: 650px;
+        top: 270px;
+        left: 640px;
+        opacity: 0.7;
+    }
+
+
+
+    #main-title img {
+        position: static;
+        top: 5px;
+        margin-left: 100%;
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

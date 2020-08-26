@@ -1,0 +1,18 @@
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: rgb(183,25,206);
+    background: radial-gradient(circle, rgba(5, 43, 90, 0.904) 0%, rgba(161, 22, 207, 0.685) 43%, rgba(16,54,99,1) 90%);
+    width: 450px;
+}
+
+footer {
+    width: 450px;
+    padding: 20px;
+    margin-top: 60px;
+    padding-bottom: 0;
+    margin-left: -15px;
+}
+

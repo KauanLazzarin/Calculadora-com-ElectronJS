@@ -6,16 +6,16 @@ require('electron-reload')(__dirname, {
 
 app.whenReady()
     .then(() => {
-        const minhaJanela = new BrowserWindow({
+        const homePage = new BrowserWindow({
             height:720,
-            width:1100,
+            width:510,
             webPreferences: {
-                webSecurity: process.env.NODE_ENV !== 'development',
                 nodeIntegration: true
             }
         })
-
-        minhaJanela.setMenu(null)
-        minhaJanela.loadFile(__dirname + '/pages/index.html')
+        
+        homePage.maximize()
+        homePage.setMenu(null)
+        homePage.loadFile(__dirname + '/pages/index.html')
     })
-    app.disableHardwareAcceleration()
+app.disableHardwareAcceleration()
