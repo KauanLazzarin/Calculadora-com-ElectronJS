@@ -15,7 +15,7 @@ app.whenReady()
         })
         
         homePage.maximize()
-        homePage.setMenu(null)
+        // homePage.setMenu(null)
         homePage.loadFile(__dirname + '/pages/index.html')
     })
 app.disableHardwareAcceleration()

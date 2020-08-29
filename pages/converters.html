@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./../public/styles/main.css">
+        <link rel="stylesheet" href="./../public/styles/responsive.css">
+        <link rel="stylesheet" href="./../public/styles/conveter-page-style.css">>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="main-title">
+            <img src="./../public/assets/logo_title.svg" alt="">
+        </div> 
+        
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Calculadora Simples </a></li>
+                <li><a href="converters.html">Converter Medidas</a></li>
+                <li><a href="">Converter Distâncias</a></li>
+                <li><a href="">Converter Medidas</a></li>
+                <li><a href="">Converter Medidas</a></li>
+                <li><a href="">Converter Medidas</a></li>
+            </ul>
+        </nav>
+
+        <div class="inputs-container">
+            <h2>Selecione a primeira medida</h2>
+            <h2>Selecione a segunda medida</h2>
+            <select name="measure-selector" id="first-measure" class="measures">
+                <option value="metro">Metro</option>
+                <option value="kilometro">Kilometro</option>
+                <option value="polegada">Polegada</option>
+            </select>
+
+            <select name="measure-colector" id="second-measure" class="measures">
+                <option value="centimetro">Centimetro</option>
+                <option value="milimetros">Milímetros</option>
+            </select>
+
+        </div>
+
+        <div class="converter-container">
+            <form action="" id="formulario">
+                <input value = "0"type="number" name="" id="measure-input" placeholder="Digite o valor a ser convertido">
+                <img src="./../public/assets/arrow-icon.svg" alt="">
+                <input type="number" name="" id="result-display" readonly>
+            </form>
+        </div>
+
+        <script src="./../public/scripts/converter-script.js"></script>
+    </body>
+
+</html>

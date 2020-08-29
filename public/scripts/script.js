@@ -32,35 +32,31 @@ numeros.forEach(numero => {
 */
 
 // Botão somar
-somar.onclick = () => {
+const operarSoma = somar.onclick = () => {
     valores.push(parseInt(display.value))
     display.value = null
     sinal = 'Somar'
-    console.log(sinal)
 }
 
 //Botão subtrair
-subtrair.onclick = () => {
+const operarSubtracao = subtrair.onclick = () => {
     valores.push(parseInt(display.value))
     display.value = null
     sinal = 'Subtrair'
-    console.log(sinal)
 }
 
 // Botão dividir
-dividir.onclick = () => {
+const operarDivisao = dividir.onclick = () => {
     valores.push(parseInt(display.value))
     display.value = null
     sinal = 'Dividir'
-    console.log(sinal)
 }
 
 // Botão multiplicar
-multiplicar.onclick = () => {
+const operarMultiplicacao = multiplicar.onclick = () => {
     valores.push(parseInt(display.value))
     display.value = null
     sinal = 'Multiplicar'
-    console.log(sinal)
 }
 
 /*
@@ -68,7 +64,7 @@ multiplicar.onclick = () => {
     do display é adicionado ao array e a função
     que calcula é chamada.
 */
-resultado.onclick = () => {
+const getResultado = resultado.onclick = () => {
     valores.push(parseInt(display.value))
     console.log(valores)
 
@@ -89,6 +85,10 @@ resultado.onclick = () => {
                 }
 
     valores = []
+
+    setTimeout(() => {
+        display.value = null    
+    }, 10000);
 }
 
 // Botão AC para resetar o display e as variáveis do array
@@ -118,14 +118,24 @@ function calcular(valor1, valor2, operador) {
             break
     }
 
-    if (resultadoFinal == Infinity) {
-        display.value = parseInt(valor1)
+    if (resultadoFinal == Infinity || isNaN(resultadoFinal) === true) {
+       display.value = null
     } else {
         display.value = (resultadoFinal)
     }
 
-    if (isNaN(resultadoFinal) === true) {
-        display.value = 'Operação inválida'
-    }
-
 }
+
+window.addEventListener('keydown', (event) => {
+    if (event.key == '+') {
+        operarSoma()
+    } else if (event.key == '-') {
+        operarSubtracao()
+    } else if (event.key == '/') {
+        operarDivisao()
+    } else if (event.key == '*') {
+        operarMultiplicacao()
+    } else if (event.key == '=') {
+        getResultado()
+    }
+})

@@ -1,0 +1,84 @@
+.inputs-container {
+    width: 90vw;
+    margin-left: 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 24vh;
+    
+    background-color: rgba(204, 178, 233, 0.336);
+    border-radius: 50px;
+}
+
+.inputs-container .measures {
+    width: 40vw;
+    margin-left: 20px;
+    border-radius: 50px;
+    background-color: rgba(154, 16, 209, 0.295);
+    border: 0;
+    font-size: 24px;
+    font-family: 'Ubuntu Mono';
+    font-weight: bold;
+    color: rgb(85, 6, 109);
+}
+
+.inputs-container #result-display {
+    width: 450px;
+    grid-row: 3;
+    margin-left: 220px;
+    background-color: rgb(191, 131, 247);
+    border: 0;
+    border-radius: 30px 10px 30px 10px;
+}
+
+.inputs-container h2 {
+    margin-left: 50px;
+    padding: 15px;
+    width: 420px;
+    font-size: 28px;
+    font-family: 'Ubuntu Mono';
+    color: rgb(58, 2, 83);
+    font-weight: 500;
+    border-bottom: 3px solid rgba(102, 51, 153, 0.473);
+    border-bottom-left-radius: 10px;
+}
+
+.measures {
+    padding-left: 37%;
+    padding-right: 25%;
+}
+
+.converter-container {
+    width: 90vw;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}  
+
+.converter-container #result-display {
+    padding: 20px;
+    width: 350px;
+    margin-top: -120px;
+    border-radius: 40px;
+    border: 0;
+}
+
+.converter-container #measure-input {
+    width: 220px;
+    padding: 20px;
+    margin-top: -120px;
+    margin-right: 40px;
+    border: 0;
+    border-radius: 40px;
+}
+
+.converter-container img {
+    width: 20px;
+    position: absolute;
+    left: 570px;
+    top: 650px;
+}
