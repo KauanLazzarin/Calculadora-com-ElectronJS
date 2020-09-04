@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../public/styles/main.css">
+        <link rel="stylesheet" href="../public/styles/imc-calculator-page.css">
+        
+        <title>Document</title>
+    </head>
+
+    <body>
+        
+        <div id="main-title">
+            <img src="./../public/assets/logo_title.svg" alt="">
+            <a href="index.html"> 
+                <img src="./../public/assets/left_arrow.svg"id="back-arrow" alt="">
+            </a>
+        </div>
+        
+        <div id="calculator-inputs">
+            <form action="" id="form">
+                <h2>Peso (Em quilogramas)</h2>
+                <input type="number" placeholder="Digite seu peso" id="weigth">
+                <h2>Altura (Em centímetros)</h2>
+                <input type="number" placeholder="Digite sua altura" id="user-heigth">
+                <button id="calc-button" type="button">Calcular</button>
+                <input type="number" name="" id="display" placeholder="Seu IMC aparecerá aqui" readonly>
+                <p id="imc-level">O seu nível de IMC aparecerá aqui</p>
+            </form>
+            <h3>Descubra aqui seu IMC</h3>
+            <img src="./../public/assets/fitness.svg" alt="" id="fitness-img">
+        </div>
+        
+    <script src="./../public/scripts/imc-calculator.js"></script>   
+    </body>
+
+</html>

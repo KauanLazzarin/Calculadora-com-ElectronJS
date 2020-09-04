@@ -14,18 +14,11 @@
     <body>
         <div id="main-title">
             <img src="./../public/assets/logo_title.svg" alt="">
+            <a href="index.html">
+            <img src="./../public/assets/left_arrow.svg" id="back-arrow" alt="" style=>
+            </a>
         </div> 
         
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">Calculadora Simples </a></li>
-                <li><a href="converters.html">Converter Medidas</a></li>
-                <li><a href="">Converter Distâncias</a></li>
-                <li><a href="">Converter Medidas</a></li>
-                <li><a href="">Converter Medidas</a></li>
-                <li><a href="">Converter Medidas</a></li>
-            </ul>
-        </nav>
 
         <div class="inputs-container">
             <h2>Selecione a primeira medida</h2>
@@ -46,7 +39,7 @@
         <div class="converter-container">
             <form action="" id="formulario">
                 <input value = "0"type="number" name="" id="measure-input" placeholder="Digite o valor a ser convertido">
-                <img src="./../public/assets/arrow-icon.svg" alt="">
+                <button id="result-button" type="button">Calcular</button>
                 <input type="number" name="" id="result-display" readonly>
             </form>
         </div>

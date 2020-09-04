@@ -82,3 +82,19 @@
     left: 570px;
     top: 650px;
 }
+
+.converter-container button {
+    margin-right: 35px;
+    margin-left: -5px;
+    padding: 20px;
+    border: 0;
+    border-radius: 20px;
+    transition: 200ms;
+    cursor: pointer;
+    background-color: rgba(58, 1, 65, 0.473);
+    font: bold ;
+}
+
+.converter-container button:hover {
+    opacity: 0.7;
+}

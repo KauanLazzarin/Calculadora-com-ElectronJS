@@ -1,0 +1,121 @@
+#fitness-img {
+    display: none;
+}
+
+#calculator-inputs {
+    height: 20vh;
+    margin-top: 50%;
+    margin-left: 15vw;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#calculator-inputs input {
+    width: 60vw;
+    padding: 20px;
+
+    color: rgb(229, 168, 248);
+    font-size: 20px;
+    background-color: rgba(124, 50, 173, 0.486);
+    border: 1px solid rgb(71, 16, 67);
+    border-radius: 40px;
+}
+
+#calculator-inputs h2 {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+    padding: 15px;
+
+    font-family: 'Ubuntu Mono';
+    color: rgb(44, 4, 41);
+    font-weight: bold;
+    border-bottom: 1px solid #f0edf142;
+    border-bottom-left-radius: 40px;
+}
+
+#calculator-inputs button {
+    width: 30vw;
+    margin-top: 5vh;
+    margin-left: 15vw;
+    padding: 20px;
+    border: 0;
+    background-color: rgba(124, 50, 173, 0.486);
+    font-family: 'Ubuntu Mono';
+    font-size: 20px;
+    border-radius: 50px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+#calculator-inputs button:hover {
+    opacity: 0.7;
+}
+
+#calculator-inputs #display {
+    margin-top: 5vh;
+    background-color: rgba(255, 255, 255, 0.486);
+    border: 0;
+    margin-bottom: 40px;
+    color: rgb(72, 6, 78);
+}
+
+#calculator-inputs h3 {
+    display: none;
+}
+
+#calculator-inputs p {
+    background-color: rgb(95, 40, 131);
+    font-size: 28px;
+    font-family: 'Ubuntu Mono';
+    font-weight: 500;
+    color: rgba(226, 149, 241, 0.678);
+    border-radius: 50px 10px 50px 10px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width: 700px) {
+    #calculator-inputs {
+        margin-left: 5vw;
+    }
+
+    #calculator-inputs input {
+        width: 30vw;
+    }
+
+    #calculator-inputs h2 {
+        width: 30vw;
+    }
+    #calculator-inputs button {
+        margin-left: 5vw;
+        width: 20vw;
+    }
+
+    #calculator-inputs h3 {
+        display: initial;
+        width: 27vw;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        
+        color: rgb(44, 4, 41);
+        font-family: 'Ubuntu Mono';
+        font-size: 28px;
+    }
+
+    #fitness-img {
+        display: block;
+        width: 35vw;
+        position: absolute;
+        left: 45vw;
+        top: 47vh;
+        border-top: 3px solid rgb(132, 9, 163);
+        border-radius: 40px;
+        padding: 20px;
+    }
+}
