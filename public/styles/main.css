@@ -94,5 +94,7 @@ input[type=number] {
 }
 
 ::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.452);
+    color: rgba(7, 0, 0, 0.452);
  }
+
+
