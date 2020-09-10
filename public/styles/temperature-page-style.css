@@ -1,0 +1,99 @@
+#temperature-inputs {
+    height: 70vh;
+    margin-top: 34vh;
+    margin-left: 1vw;
+    width: 95.6vw;
+    border-radius: 20px 50px 20px 50px;
+}
+
+#temperature-inputs form {
+    margin-top: -5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#temperature-inputs select {
+    width: 27vw;
+    margin-bottom: 20px;
+    margin-top: 10vh;
+    max-width: 200px;
+    padding: 15px;
+    color: rgb(229, 168, 248);
+    font-size: 17px;
+    background-color: rgba(124, 50, 173, 0.486);
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+}
+
+#temperature-inputs input {
+    margin-top: 7vh;
+    padding: 15px;
+    margin-right: 20px;
+    width:27vw;
+    max-width: 200px;
+
+    color: rgb(229, 168, 248);
+    font-size: 20px;
+    background-color: rgba(124, 50, 173, 0.486);
+    border: 0;
+    border-radius: 40px;
+}
+
+#temperature-inputs h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu Mono';
+    font-weight: 500;
+    color: rgba(110, 8, 136, 0.589);
+    font-size: 34px;
+    padding: 40px;
+    margin-bottom: 50px;
+    border-radius: 70%;
+    border-bottom: 2px solid rgb(72, 3, 78);
+}
+
+#temperature-inputs img {
+    width: 10vw;
+    margin-left: 45vw;
+    border: 3px solid rgba(78, 2, 97, 0.295);
+    border-radius: 50px;
+}
+
+#weather-img {
+    display: none;
+}
+
+@media (min-width: 700px) {
+    #temperature-inputs {
+        width: 50vw;
+        min-width: 550px;
+    }
+
+    #temperature-inputs input, #temperature-inputs select {
+        margin-top: 5vh;
+        margin-bottom: 0;
+    }
+
+    #temperature-inputs img {
+        margin-left: 22vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        max-width: 100px;
+        border-radius: 100%;
+    }
+
+    #weather-img {
+        display: block;
+        width: 30vw;
+        position: absolute;
+        top: 30vh;
+        left: 59vw;
+        border-bottom: 3px solid rgba(45, 1, 66, 0.37);
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+    }
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">   
+        <link rel="stylesheet" href="../public/styles/main.css">
+        <link rel="stylesheet" href="../public/styles/temperature-page-style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temperaturas</title>
+    </head>
+
+    <body>
+        <div id="main-title">
+            <img src="./../public/assets/logo_title.svg" alt="">
+            <a href="index.html"> 
+                <img src="./../public/assets/left_arrow.svg"id="back-arrow" alt="">
+            </a>
+        </div>
+
+        <div id="temperature-inputs">
+            <h1>Converta aqui suas temperaturas</h1>
+
+            <form action="" id="first-measure">
+                <input type="number" name="" id="first-measure-input" placeholder="0">
+                <select name="" id="first-measure-select" value="0">
+                    <option value="celsius" selected> Graus Celsius (C°) </option>
+                    <option value="kelvin"> Kelvin (K) </option>
+                    <option value="fahren"> Grau Fahrenheit (F°) </option>
+                </select>
+            </form>
+
+            <img src="./../public/assets/temperature_icon.svg" alt="">
+
+            <form action="" id="second-measure">
+                <input type="number" name="" id="second-measure-input">
+                <select name="" value="celsius" id="second-measure-select">
+                    <option value="celsius" selected="selected"> Graus Celsius (C°) </option>
+                    <option value="kelvin"> Kelvin (K) </option>
+                    <option value="fahren"> Grau Fahrenheit (F°) </option>
+                </select>
+            </form>
+        </div>
+
+        <img id="weather-img" src="./../public/assets/weather.svg" alt="">
+
+        <script src="./../public/scripts/temperature-converter.js"></script>
+    </body>
+
+</html>
